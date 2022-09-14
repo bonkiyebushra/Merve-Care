@@ -1,0 +1,151 @@
+:root {
+  --primary-text-color-red: red;
+  --primary-text-color-green: green;
+  --secondary-text-color: gray;
+  --primary-bg-color: rgb(250, 247, 247);
+  --secondary-bg-color: red;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 1rem 0rem;
+}
+
+ul {
+  margin-left: 1rem;
+}
+
+div {
+  padding: 0rem 0.15rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  line-height: 1.75rem;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 0.5rem 1.5rem;
+}
+
+header {
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.07); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .75rem 2rem;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 2px dashed black;
+  border-style: none none dashed;
+  color: #fff;
+  background-color: #fff;
+}
+
+header a,
+footer a {
+  color: inherit;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  padding: 0 0 1rem 0;
+}
+
+#logo {
+  display: flex;
+  height: 6rem;
+  margin-left: 7rem;
+}
+
+#nav_area {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10rem;
+}
+
+#nav_area a {
+  font-size: 1.15rem;
+}
+
+#facebook_icon {
+  color: #4267b2;
+  width: 2rem;
+}
+
+#contact_us {
+  text-align: center;
+}
+
+#appointment_form label {
+  display: block;
+}
+
+#appointment_form div {
+  margin-bottom: 0.75rem;
+}
+
+#contact_method_field label {
+  display: inline;
+  margin-right: 1rem;
+}
+
+#services {
+  display: grid;
+  grid-template-columns: 25rem 25rem 25rem;
+  gap: 2rem;
+  width: fit-content;
+  margin: 3rem auto;
+}
+
+#footer_quick_links {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer_contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.top_section {
+  background-size: cover;
+  color: white;
+}
+
+.selected_nav_item {
+  color: var(--primary-text-color-red);
+}

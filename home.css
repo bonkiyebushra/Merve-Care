@@ -1,0 +1,312 @@
+:root {
+  --primary-text-color-red: red;
+  --primary-text-color-green: green;
+  --secondary-text-color: gray;
+  --primary-bg-color: rgb(238, 238, 238);
+  --secondary-bg-color: red;
+}
+
+h2 {
+  color: rgb(2, 22, 43);
+  font-size: 2.35rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+}
+
+form {
+    background-color: white;
+    padding: 3rem;
+}
+
+textarea {
+    resize: none;
+}
+
+#call_to_action_box {
+  display: flex;
+  justify-content: space-between;
+  width: 25rem;
+  align-items: center;
+}
+
+#call_to_action_box a:not(.action_btn) {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+#home_top_section {
+    display: flex;
+    height: 50rem;
+    background-image: url("https://image.shutterstock.com/shutterstock/photos/697079101/display_1500/stock-photo-happy-senior-woman-talking-with-friendly-nurse-at-geriatric-ward-697079101.jpg");
+    /* margin-top: 1rem; */
+    background-repeat: no-repeat;
+  }
+  
+  #home_top_section_text {
+    background-color: white;
+    padding: 2rem 4.5rem 0 2rem;
+    width: 37rem;
+    height: 25rem;
+    color: var(--tertiary-text-color-red);
+    margin-top: 5rem;
+    margin-left: 7rem;
+    border-radius: 0.3rem;
+  }
+
+#home_actions {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+#middle_section_1 {
+  background-color: var(--primary-bg-color);
+  text-align: center;
+}
+
+#middle_section_1 p a {
+  text-decoration: underline;
+}
+
+#middle_section_2 {
+  /* height: 33vh; */
+}
+
+#middle_section_3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#about_us_right {
+    display: flex;
+    flex-direction: column;
+}
+
+#about_us_right .action_btn{
+    margin-top: 2rem;
+    width: 8rem;
+}
+
+#middle_section_4 {
+    background-color: rgb(55, 74, 97);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 10rem ;
+}
+
+#middle_section_4 h2 {
+    margin-bottom: 0;
+    color: var(--primary-text-color-red);
+}
+
+#Middle_section_4 p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+#contact_us_box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+}
+
+#contact_us_right form input[type="submit"] {
+    display: block;
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: .3rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#middle_section_5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#newsletter_subscribe_left {
+    background-color: rgb(129, 200, 84);
+    padding: 4rem;
+    color: white;
+}
+
+#newsletter_subscribe_left h2 {
+    color: white;
+}
+
+#newsletter_subscribe_left h3 {
+    font-size: 1.75rem;
+    margin-top: 3rem;
+}
+
+#newsletter_subscribe_left form {
+    display: flex;
+    background-color: inherit;
+    padding:0;
+}
+
+#newsletter_subscribe_left form input[type="text"]{
+    height: 3rem;
+    width: 25rem;
+    padding-left: 1rem;
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+    border: none;
+    
+}
+
+#newsletter_subscribe_left form input[type='submit'] {
+    margin-left: 0;
+    height: 3rem;
+    border:none;
+    background-color: var(--secondary-bg-color);
+    color: white; /*TODO: Remove after replacing text with font */
+    padding: .25rem;
+}
+
+.action_btn {
+    background-color: var(--secondary-bg-color);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    /* width: 10rem; */
+  }
+
+.middle_section {
+  padding: 4rem 0;
+}
+
+.home_action {
+  height: 20rem;
+  width: 22rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary-bg-color);
+  /* border: 1px solid gray; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 0px 1.2px #5eba3756;
+  padding: 3rem 2.5rem 3rem 2.5rem;
+}
+
+.home_action h3 {
+  color: var(--primary-text-color-green);
+}
+
+.home_action p {
+  color: black;
+}
+
+.home_action:hover {
+  box-shadow: 0px 0px 1.2px #ff0000;
+}
+
+.action_font_box {
+  display: flex;
+  justify-content: center;
+  height: 6.5rem;
+  width: 6.5rem;
+  padding: 1.5rem;
+  margin: 0rem 0.66rem;
+  background-color: rgb(101, 184, 101);
+  border-radius: 6.5rem;
+  border: 0.5rem solid rgb(178, 240, 178);
+}
+
+.action_font {
+  height: 2.5rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid gray; */
+  padding: 0rem 1rem 1rem 1rem;
+  border-radius: 0.35rem;
+  box-shadow: 0 0 1.5rem rgb(215, 212, 212);
+}
+
+.service > img {
+  height: 15rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.service a {
+  margin-top: auto;
+  margin: auto auto 0 auto;
+  margin-bottom: 0;
+  color: var(--primary-text-color-red);
+  width: fit-content;
+  border: 2px solid lightgray;
+  padding: 1rem 1.75rem;
+  border-radius: 0.2rem;
+}
+
+.service p {
+  margin-top: 0;
+}
+
+.service a img {
+  height: 0.75rem;
+}
+
+.mission_visions {
+  display: flex;
+  align-items: center;
+}
+
+.mission_vision_texts {
+  margin-left: 1.5rem;
+}
+
+.form_row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.form_field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_field label {
+    margin-bottom: 1rem;
+}
+
+.form_field input, textarea {
+    margin-right: 1.5rem;
+    border: none;
+    border-radius: .3rem;
+    padding-left: .5rem;
+    background-color: var(--primary-bg-color);
+}
+
+.form_field input {
+    width: 20rem;
+    height: 3rem;
+    margin-right: 1.5rem;
+}
