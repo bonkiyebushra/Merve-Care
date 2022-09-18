@@ -4,7 +4,7 @@
       rgb(63, 87, 104) 40%,
       rgba(63, 87, 104, 0)
     ),
-    url("/images/pexels-books.jpg");
+    url("./images/pexels-books.jpg");
   background-position-x: 0, 5rem;
   background-position-y: 0, -5rem;
 }
@@ -20,7 +20,7 @@
 @media (max-width:750px) {
 
     #resources_top_section {
-      background-image: url('images/pexels-books.jpg');
+      background-image: url('./images/pexels-books.jpg');
     }
   
   }
