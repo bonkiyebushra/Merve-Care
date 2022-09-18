@@ -1,8 +1,26 @@
 #resources_top_section {
-    height: 75vh;
-    background-image: url('images/pexels-pixabay-45842.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgb(63, 87, 104) 40%,
+      rgba(63, 87, 104, 0)
+    ),
+    url("/images/pexels-books.jpg");
+  background-position-x: 0, 5rem;
+  background-position-y: 0, -5rem;
+}
+
+#resources_list a {
+    color: var(--primary-text-color-red);
 }
 
 #resources_list p {
-    display: inline-block;
+  display: inline-block;
 }
+
+@media (max-width:750px) {
+
+    #resources_top_section {
+      background-image: url('images/pexels-books.jpg');
+    }
+  
+  }

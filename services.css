@@ -1,10 +1,12 @@
 #services_top_section {
-  height: 75vh;
-  background-image: url("images/pexels-andrea-piacquadio-3768131.jpg");
+  background-image: linear-gradient(to right, rgb(63, 87, 104) 40%, rgba(63, 87, 104, 0.027)), url('images/pexels-andrea-piacquadio-3768131.jpg');
+  background-position-x:0, 15em;
+  background-position-y: 0, -5rem;
 }
 
 #services {
   gap: 4rem 4rem;
+  justify-items: center;
 }
 
 .service {
@@ -19,7 +21,7 @@
 }
 
 .service h3 {
-  background-color: blanchedalmond;
+  background-color: var(--tertiary-bg-color);
   width: 100%;
   margin-top: auto;
   margin-bottom: 0.5rem;
@@ -27,11 +29,11 @@
 }
 
 #personal_care_service {
-  background-image: url("images/personal_care.jpg");
+  background-image: url("images/person_care_nurse.png");
 }
 
 #housekeeping_service {
-  background-image: url("images/housekeeping.jpg");
+  background-image: url("images/house_keeping.png");
 }
 
 #respite_care_service {
@@ -51,9 +53,18 @@
 }
 
 p a {
-  color: rgb(161, 14, 14);
+  color: var(--primary-text-color-red);
 }
 
 div ul li {
   list-style: inside;
+}
+
+
+@media (max-width:750px) {
+
+  #services_top_section {
+    background-image: url('images/pexels-andrea-piacquadio-3768131.jpg');
+  }
+
 }

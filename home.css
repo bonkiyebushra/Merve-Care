@@ -1,18 +1,3 @@
-:root {
-  --primary-text-color-red: red;
-  --primary-text-color-green: green;
-  --secondary-text-color: gray;
-  --primary-bg-color: rgb(238, 238, 238);
-  --secondary-bg-color: red;
-}
-
-h2 {
-  color: rgb(2, 22, 43);
-  font-size: 2.35rem;
-  font-weight: 900;
-  margin-bottom: 0.5rem;
-}
-
 h3 {
   font-size: 1.5rem;
 }
@@ -23,18 +8,55 @@ p {
 }
 
 form {
-    background-color: white;
-    padding: 3rem;
+  background-color: white;
+  padding: 3rem;
 }
 
-textarea {
-    resize: none;
+#home_top_section {
+  display: flex;
+  height: 41.5rem;
+  background-image: url("images/granddaughter-talking-with-her-grandmother-sitting-wheelchair-cheerful-concept-happy-family_desktop.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+}
+
+#home_top_section_text {
+  background-color: white;
+  padding: 2rem 0rem 0 2rem;
+  width: min(37rem, 90%);
+  height: 22.5rem;
+  color: var(--tertiary-text-color-red);
+  margin-top: 5rem;
+  margin-left: 9.5rem;
+  border-radius: 0.3rem;
+}
+
+#home_top_section_text > p {
+  margin-bottom: 1rem;
+}
+
+#home_actions {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#home_actions a {
+  width: fit-content;
+  justify-self: center;
 }
 
 #call_to_action_box {
   display: flex;
-  justify-content: space-between;
-  width: 25rem;
+  justify-content: flex-start;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -43,154 +65,85 @@ textarea {
   text-underline-offset: 0.5rem;
 }
 
-#home_top_section {
-    display: flex;
-    height: 50rem;
-    background-image: url("https://image.shutterstock.com/shutterstock/photos/697079101/display_1500/stock-photo-happy-senior-woman-talking-with-friendly-nurse-at-geriatric-ward-697079101.jpg");
-    /* margin-top: 1rem; */
-    background-repeat: no-repeat;
-  }
-  
-  #home_top_section_text {
-    background-color: white;
-    padding: 2rem 4.5rem 0 2rem;
-    width: 37rem;
-    height: 25rem;
-    color: var(--tertiary-text-color-red);
-    margin-top: 5rem;
-    margin-left: 7rem;
-    border-radius: 0.3rem;
-  }
-
-#home_actions {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: auto;
-  padding-bottom: auto;
-}
-
 #middle_section_1 {
   background-color: var(--primary-bg-color);
   text-align: center;
+  padding-inline: 1rem;
+}
+
+#middle_section_1 > p:nth-of-type(1) {
+  width: 39rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #middle_section_1 p a {
   text-decoration: underline;
 }
 
+#services {
+  width: fit-content;
+}
+
 #middle_section_2 {
   /* height: 33vh; */
 }
 
-#middle_section_3 {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#about_us_right {
-    display: flex;
-    flex-direction: column;
-}
-
-#about_us_right .action_btn{
-    margin-top: 2rem;
-    width: 8rem;
-}
-
 #middle_section_4 {
-    background-color: rgb(55, 74, 97);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem 10rem ;
+  background: linear-gradient(
+    to bottom,
+    var(--tertiary-bg-color-blue) 0%,
+    var(--tertiary-bg-color-blue) 50%,
+    white 50%,
+    white 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 5.5rem;
+  background-color: inherit;
 }
 
 #middle_section_4 h2 {
-    margin-bottom: 0;
-    color: var(--primary-text-color-red);
+  margin-bottom: 0;
+  color: var(--primary-text-color-red);
+  justify-content: space-around;
 }
 
 #Middle_section_4 p {
-    margin-top: 0;
-    margin-bottom: 2rem;
-    color: white;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: white;
 }
 
 #contact_us_box {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 4fr 5fr;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 4.5fr 5fr;
+  gap: 0;
+  box-shadow: 0.5rem 0.5rem 0.5rem #4648493b;
+  border-bottom-right-radius: 0.3rem;
 }
 
-#contact_us_right form input[type="submit"] {
-    display: block;
-    background-color: var(--secondary-bg-color);
-    width: 100%;
-    height: 3rem;
-    border: none;
-    border-radius: .3rem;
-    color: white;
-    font-size: 1.1rem;
+#contact_us_left {
+  /* width: 35rem; */
 }
 
-#middle_section_5 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#contact_us_left img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
 
-#newsletter_subscribe_left {
-    background-color: rgb(129, 200, 84);
-    padding: 4rem;
-    color: white;
+#contact_us_right {
+  background-color: white;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  padding: 0.25rem 0;
 }
-
-#newsletter_subscribe_left h2 {
-    color: white;
-}
-
-#newsletter_subscribe_left h3 {
-    font-size: 1.75rem;
-    margin-top: 3rem;
-}
-
-#newsletter_subscribe_left form {
-    display: flex;
-    background-color: inherit;
-    padding:0;
-}
-
-#newsletter_subscribe_left form input[type="text"]{
-    height: 3rem;
-    width: 25rem;
-    padding-left: 1rem;
-    border-top-left-radius: .3rem;
-    border-bottom-left-radius: .3rem;
-    border: none;
-    
-}
-
-#newsletter_subscribe_left form input[type='submit'] {
-    margin-left: 0;
-    height: 3rem;
-    border:none;
-    background-color: var(--secondary-bg-color);
-    color: white; /*TODO: Remove after replacing text with font */
-    padding: .25rem;
-}
-
-.action_btn {
-    background-color: var(--secondary-bg-color);
-    padding: 1rem;
-    border-radius: 0.25rem;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    /* width: 10rem; */
-  }
 
 .middle_section {
   padding: 4rem 0;
@@ -198,7 +151,7 @@ textarea {
 
 .home_action {
   height: 20rem;
-  width: 22rem;
+  width: 20rem;
   border-radius: 0.5rem;
   background-color: var(--primary-bg-color);
   /* border: 1px solid gray; */
@@ -248,12 +201,13 @@ textarea {
 }
 
 .service > img {
-  height: 15rem;
+  /* height: 15rem; */
+  width: auto;
   margin-top: 1rem;
   border-radius: 0.25rem;
 }
 
-.service a {
+.more_details_btn {
   margin-top: auto;
   margin: auto auto 0 auto;
   margin-bottom: 0;
@@ -268,45 +222,89 @@ textarea {
   margin-top: 0;
 }
 
-.service a img {
+.more_details_btn:hover {
+  background-color: lightgray;
+}
+
+.more_details_btn img {
   height: 0.75rem;
 }
 
-.mission_visions {
-  display: flex;
-  align-items: center;
+/* Medium screen size */
+
+@media (max-width: 1300px) {
+  #home_top_section {
+    height: 25rem;
+  }
+
+  #home_top_section_text {
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-top: 1rem;
+  }
+
+  #middle_section_4 {
+    padding: 4rem 1.5rem;
+  }
+
+  #contact_us_right form {
+    padding: 1rem;
+  }
+
+  #contact_us_right form .form_field input {
+    /* width: 15rem; */
+    height: 3rem;
+  }
+
+  #footer_bottom {
+    padding: 3rem 2rem 1rem 2rem;
+  }
 }
 
-.mission_vision_texts {
-  margin-left: 1.5rem;
-}
-
-.form_row {
-    width: 100%;
+@media (max-width: 950px) {
+  #home_top_section {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/granddaughter-talking-with-her-grandmother-sitting-wheelchair-cheerful-concept-happy-family_mobile.png");
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+  }
+
+  #home_top_section_text {
+    position: static;
+    margin: 0;
+  }
+
+  #call_to_action_box {
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+
+  #middle_section_1 > p:nth-of-type(1) {
+    width: fit-content;
+  }
+
+  #contact_us_box {
+    grid-template-columns: 1fr;
+  }
+
+  #contact_us_left {
+    display: none;
+  }
+
+  #contact_us_right form {
+    /* width: min(5rem, 90%); */
+  }
 }
 
-.form_field {
+@media (max-width: 750px) {
+
+  #home_top_section_text {
     display: flex;
     flex-direction: column;
-}
-
-.form_field label {
-    margin-bottom: 1rem;
-}
-
-.form_field input, textarea {
-    margin-right: 1.5rem;
-    border: none;
-    border-radius: .3rem;
-    padding-left: .5rem;
-    background-color: var(--primary-bg-color);
-}
-
-.form_field input {
-    width: 20rem;
-    height: 3rem;
-    margin-right: 1.5rem;
+    justify-content: center;
+    height: 70%;
+    padding-bottom: 1rem;
+  }
 }

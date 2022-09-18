@@ -8,31 +8,16 @@
 </head>
 
 <body>
-    <header id="top_header">
-        <div></div>
-        <div id="logo">
-
-            <a href='../'><img src="../images/logo.png" alt="LOGO" /></a>
-            <!-- <h1>Brand Name</h1>  -->
-        </div>
-
+    <header>
+        <a id="logo" href='./'><img src="./images/logo.png" alt="LOGO" /></a>
+        <img id="menu_bar" src="images/menu_bars.svg" alt="menu bars" onclick="handleMenuClick()">
         <nav id="nav_area">
-            <ul>
-                <li><a href="../">Home</a></li>
-                <li><a href="../about_us.html">About Us</a></li>
-                <li><a href="../services.html">Services</a></li>
-                <li><a href="../resources.html">Resources</a></li>
-                <li><a href="../contact_us.html">Contact Us</a></li>
-            </ul>
+            <a class="selected_nav_item" href="./">Home</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./services.html">Services</a>
+            <a href="./resources.html">Resources</a>
+            <a href="./contact_us.html">Contact Us</a>
         </nav>
-
-        <div>
-            <a href="tel:614-555-5555"><strong>(614) 555-5555</strong></a>
-            <p>email@email.com</p>
-            <ul id="header_socials">
-                <img id="facebook_icon" src="../images/facebook_icon.svg" alt="facebook_icon">
-            </ul>
-        </div>
     </header>
 
     <main>
@@ -70,5 +55,6 @@
             <a href="mailto:unknownpersonal@email.com">unknownpersonal@email.com</a>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
