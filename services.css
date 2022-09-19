@@ -1,5 +1,5 @@
 #services_top_section {
-  background-image: linear-gradient(to right, rgb(63, 87, 104) 40%, rgba(63, 87, 104, 0.027)), url('images/pexels-andrea-piacquadio-3768131.jpg');
+  background-image: linear-gradient(to right, rgb(63, 87, 104) 40%, rgba(63, 87, 104, 0.027)), url('images/services.webp');
   background-position-x:0, 15em;
   background-position-y: 0, -5rem;
 }
@@ -64,7 +64,7 @@ div ul li {
 @media (max-width:750px) {
 
   #services_top_section {
-    background-image: url('images/pexels-andrea-piacquadio-3768131.jpg');
+    background-image: url('images/services.webp');
   }
 
 }

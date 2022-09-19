@@ -315,4 +315,8 @@ form {
   .service > img {
     height: 19rem;
   }
+
+  #services {
+    width: calc(100% - 2rem);
+  }
 }
