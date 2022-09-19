@@ -29,27 +29,27 @@
 }
 
 #personal_care_service {
-  background-image: url("images/person_care_nurse.png");
+  background-image: url("images/personal_care.jpg");
 }
 
 #housekeeping_service {
-  background-image: url("images/house_keeping.png");
+  background-image: url("images/housekeeping.webp");
 }
 
 #respite_care_service {
-  background-image: url("images/respite_care.jpg");
+  background-image: url("images/respite_care.webp");
 }
 
 #home_visit_service {
-  background-image: url("images/home_visits.jpg");
+  background-image: url("images/home_visits.webp");
 }
 
 #intermittent_chore_service {
-  background-image: url("images/chore.jpg");
+  background-image: url("images/chore.webp");
 }
 
 #miscellaneous_service {
-  background-image: url("images/miscellaneous.jpg");
+  background-image: url("images/miscellaneous.webp");
 }
 
 p a {
