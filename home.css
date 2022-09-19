@@ -15,7 +15,7 @@ form {
 #home_top_section {
   display: flex;
   height: 41.5rem;
-  background-image: url("images/granddaughter-talking-with-her-grandmother-sitting-wheelchair-cheerful-concept-happy-family_desktop.png");
+  background-image: url("images/granddaughter-talking-with-her-grandmother-sitting-wheelchair-cheerful-concept-happy-family_desktop.webp");
   /* background-size: cover; */
   background-repeat: no-repeat;
   background-size: 100%;
@@ -82,7 +82,7 @@ form {
 }
 
 #services {
-  width: fit-content;
+  width: calc(100% - 6rem);
 }
 
 #middle_section_2 {
@@ -201,7 +201,7 @@ form {
 }
 
 .service > img {
-  /* height: 15rem; */
+  height: 15rem;
   width: auto;
   margin-top: 1rem;
   border-radius: 0.25rem;
@@ -265,7 +265,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("images/granddaughter-talking-with-her-grandmother-sitting-wheelchair-cheerful-concept-happy-family_mobile.png");
+    background-image: url("images/granddaughter-talking-with-her-grandmother-sitting-wheelchair-cheerful-concept-happy-family_mobile.webp");
     background-size: cover;
     background-position: center;
     height: 35rem;
@@ -296,6 +296,10 @@ form {
   #contact_us_right form {
     /* width: min(5rem, 90%); */
   }
+
+  .service>img {
+    height: 19rem;
+  }
 }
 
 @media (max-width: 750px) {
@@ -306,5 +310,9 @@ form {
     justify-content: center;
     height: 70%;
     padding-bottom: 1rem;
+  }
+
+  .service > img {
+    height: 19rem;
   }
 }
