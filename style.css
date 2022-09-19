@@ -123,6 +123,11 @@ footer {
   margin-left: 7rem;
 }
 
+#logo img {
+  height: 6rem;
+  width: 5rem;
+}
+
 #nav_area {
   width: 35rem;
   display: flex;
@@ -284,7 +289,8 @@ footer {
 }
 
 .footer_logo img{
-  width: 70%;
+  height: 5rem;
+  width: 4rem;
 }
 
 #footer_bottom h3,#footer_bottom_mobile h3 {
