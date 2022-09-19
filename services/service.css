@@ -1,7 +1,15 @@
-
-
 h1 {
   text-decoration: underline;
+  color: var(--tertiary-text-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+a {
+  color: var(--primary-text-color-red);
 }
 
 #service_sublist {
