@@ -139,6 +139,9 @@ form {
 }
 
 #contact_us_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: white;
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
