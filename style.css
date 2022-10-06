@@ -594,6 +594,11 @@ textarea {
     padding: 0.5rem 0.25rem 0 0.25rem;
   }
 
+  #newsletter_subscribe_right {
+    height: 20rem;
+    width:100%
+  }
+
   .form_row {
     flex-direction: column;
   }
