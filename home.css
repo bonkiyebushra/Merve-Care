@@ -334,11 +334,17 @@ form {
     margin: 0;
   }
 
+  #middle_section_1 h2{
+    margin: 0;
+    margin-bottom: .2rem;
+  }
+
   .service > img {
     height: 19rem;
   }
 
   #services {
     width: calc(100% - 2rem);
+    margin: 1rem auto;
   }
 }
