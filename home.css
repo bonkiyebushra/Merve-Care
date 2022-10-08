@@ -306,7 +306,7 @@ form {
 
 @media (max-width: 750px) {
   #home_top_section {
-    height: 22rem;
+    height: 17rem;
   }
 
   #home_top_section_text {
@@ -319,6 +319,7 @@ form {
 
   #home_top_section_text h2{
     margin: 0;
+    font-size: 1.75rem;
   }
 
   #home_top_section_text p {

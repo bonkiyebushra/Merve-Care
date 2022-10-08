@@ -7,7 +7,7 @@
 @media (max-width:750px) {
 
     #about_top_section {
-      background-image: url('images/about_us.webp');
+      background-image: linear-gradient(to top, rgb(63, 87, 104) 10%, rgba(63, 87, 104, 0.027)), url('images/about_us.webp');
       background-position: center;
     }
   

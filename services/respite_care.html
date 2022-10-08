@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,17 +14,42 @@
         <a id="logo" href='../'><img src="../images/logo.png" alt="LOGO" /></a>
         <img id="menu_bar" src="../images/menu_bars.svg" alt="menu bars" onclick="handleMenuClick()">
         <nav id="nav_area">
-            <a class="selected_nav_item" href="../">Home</a>
-            <a href="../about_us.html">About Us</a>
-            <a href="../services.html">Services</a>
-            <a href="../resources.html">Resources</a>
-            <a href="../contact_us.html">Contact Us</a>
+            <img id="close_icon" src="../images/close_icon.svg" alt="" onclick="handleCloseButtonClick()">
+
+            <h3>Merve Care</h3>
+
+            <a href="../">
+                <img src="../images/home_icon.svg" alt="home icon" class="">
+                Home
+            </a>
+            <hr>
+            <a href="../about_us.html">
+                <img src="../images/about_us_icon.svg" alt="about us icon" class="">
+                About Us
+            </a>
+            <hr>
+            <a href="../services.html">
+                <img src="../images/service_icon.svg" alt="service icon" class="">
+                Services
+            </a>
+            <hr>
+            <a href="../resources.html">
+                <img src="../images/resources_icon.svg" alt="resources icon" class="">
+                Resources
+            </a>
+            <hr>
+            <a href="../contact_us.html">
+                <img src="../images/contact_us_icon.svg" alt="contact us icon" class="">
+                Contact Us
+            </a>
+            <hr>
         </nav>
     </header>
 
     <main>
         <span id="breadcrumb">
-            <a href="../services.html">Services</a> <img class="chevron_font" src="../images/red_arrow.svg"> Personal Care
+            <a href="../services.html">Services</a> <img class="chevron_font" src="../images/red_arrow.svg"> Personal
+            Care
         </span>
         <hr>
         <h1>Personal Care</h1>
@@ -31,7 +58,9 @@
 
         <ul id="service_sublist">
         </ul>
-        <p id="contact_us_link">For more inquiries on personal care please do not hesitate to reach out to us by phone at <a href="tel:614-555-5555">614-555-5555</a> or by <a href="../contact_us.html">sending us a message</a></p>
+        <p id="contact_us_link">For more inquiries on personal care please do not hesitate to reach out to us by phone
+            at <a href="tel:614-555-5555">614-555-5555</a> or by <a href="../contact_us.html">sending us a message</a>
+        </p>
     </main>
 
     <footer>
@@ -124,4 +153,5 @@
     </footer>
     <script src="../index.js"></script>
 </body>
+
 </html>

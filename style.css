@@ -139,6 +139,14 @@ footer {
   margin-right: 10rem;
 }
 
+#nav_area h3 {
+  display: none;
+}
+
+#nav_area img {
+  display: none;
+}
+
 #nav_area a {
   font-size: 1.15rem;
 }
@@ -470,7 +478,7 @@ textarea {
 
 @media (max-width: 1300px) {
   #logo {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   #nav_area {
@@ -514,7 +522,7 @@ textarea {
 
   header {
     position: relative;
-    height: 8rem;
+    height: 6.5rem;
   }
 
   #menu_bar {
@@ -526,11 +534,40 @@ textarea {
     flex-direction: column;
     position: absolute;
     right: 0;
-    top: 5.5rem;
-    width: fit-content;
-    background-color: rgb(236, 236, 236);
-    /* color: white; */
-    padding: 0.25rem 0.5rem;
+    top: 0;
+    margin-right: 0;
+    right: 0;
+    width: 70vw;
+    justify-content: start;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -.25rem 0 1rem rgb(186, 185, 185);
+    /* padding: 0.25rem 2.5rem; */
+    padding-top: .75rem;
+  }
+
+  #nav_area a,#nav_area h3 {
+    margin-left: 2.5rem;
+  }
+
+  #nav_area h3 {
+    display: initial;
+  }
+
+  #nav_area hr {
+    border: 1px solid #dedede;
+    width: 100%;
+  }
+
+  #nav_area img {
+    display:initial;
+    margin-right: 1rem;
+  }
+
+  #close_icon {
+    height: 2rem;
+    width: 2rem;
+    margin-left: auto;
   }
 
   #footer_top {
@@ -572,6 +609,11 @@ textarea {
 
   main .top_section {
     background-position: center !important;
+  }
+
+  .top_section>h1 {
+    margin: auto auto 1rem auto;
+    color: white;
   }
 
   .mission_visions {

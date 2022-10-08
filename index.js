@@ -1,13 +1,19 @@
 // isMenuActive = false;
+let popupMenu = document.getElementById("nav_area");
+
+function handleCloseButtonClick () {
+    popupMenu.style.display = "none"
+}
+
+document.addEventListener("click",(e)=> {
+    
+    const isClosest = e.target.closest("#nav_area")
+    if(!isClosest && e.target.id != "menu_bar"  && popupMenu.style.display == "flex" ) {
+        popupMenu.style.display = "none"
+    }
+})
+
 
 function handleMenuClick() {
-
-    let isMenuActive = document.getElementById("nav_area").style.display == "flex";
-
-    if(isMenuActive) {
-        document.getElementById("nav_area").style.display = "none"
-    } else {
-        document.getElementById("nav_area").style.display = "flex"
-    }
-    isMenuActive =!isMenuActive;
+    popupMenu.style.display = "flex"
 }

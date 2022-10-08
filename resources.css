@@ -20,7 +20,7 @@
 @media (max-width:750px) {
 
     #resources_top_section {
-      background-image: url('./images/resources.webp');
+      background-image: linear-gradient(to top, rgb(63, 87, 104) 10%, rgba(63, 87, 104, 0.027)), url('images/resources.webp');
     }
   
   }
