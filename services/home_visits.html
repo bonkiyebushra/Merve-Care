@@ -27,7 +27,7 @@
                 About Us
             </a>
             <hr>
-            <a href="../services.html">
+            <a class="selected_nav_item" href="../services.html">
                 <img src="../images/service_icon.svg" alt="service icon" class="">
                 Services
             </a>
@@ -47,18 +47,94 @@
 
     <main>
         <span id="breadcrumb">
-            <a href="../services.html">Services</a> <img class="chevron_font" src="../images/red_arrow.svg"> Personal Care
+            <a href="../services.html">Services</a>
+            <img class="chevron_font" src="../images/red_arrow.svg" /> Home Visits
         </span>
+        <hr />
+        <div id="service_description">
+            <div id="service_left">
+                <img src="../images/home_visits_pic.webp" alt="Home visits pic" />
+            </div>
+            <div id="service_right">
+                <h1>Home Visits</h1>
+
+                <h2>Merve Care Provides home visit services such as:</h2>
+
+                <ul id="service_sublist">
+                    <li>
+                        <img src="../images/check-circle.svg" alt="Check circle icon" />
+                        
+                    </li>
+                    <li>
+                        <img src="../images/check-circle.svg" alt="Check circle icon" />
+                        
+                    </li>
+                    <li>
+                        <img src="../images/check-circle.svg" alt="Check circle icon">
+                        
+                    </li>
+                    <li>
+                        <img src="../images/check-circle.svg" alt="Check circle icon">
+                        
+                    </li>
+                    <li>
+                        <img src="../images/check-circle.svg" alt="Check circle icon">
+                        
+                    </li>
+                    <li>
+                        <img src="../images/check-circle.svg" alt="Check circle icon">
+                        
+                    </li>
+                    <li>
+                        <img src="../images/check-circle.svg" alt="Check circle icon">
+                        
+                    </li>
+                    <li>
+                        <img src="../images/check-circle.svg" alt="Check circle icon">
+                        
+                    </li>
+                </ul>
+                <p id="contact_us_link">
+                    For more inquiries on home visits please do not hesitate to reach
+                    out to us by phone at <a href="tel:614-555-5555">614-555-5555</a> or
+                    by <a href="../contact_us.html">sending us a message</a>
+                </p>
+            </div>
+        </div>
         <hr>
-        <h1>Personal Care</h1>
-
-        <h2>Merve Care Provides home visit services in which we will assist with: </h2>
-
-        <ul id="service_sublist">
-
-        </ul>
-        <p id="contact_us_link">For more inquiries on personal care please do not hesitate to reach out to us by phone
-            at <a href="tel:614-555-5555">614-555-5555</a> or by <a href="../contact_us.html">sending us a message</a></p>
+        <div id="service_contact">
+            <div id="service_contact_left">
+                <h2>Contact Us</h2>
+                <p>
+                    Fill out this form to get more information about the home visit service
+                    that we provide
+                </p>
+            </div>
+            <div id="service_contact_right">
+                <form>
+                    <div class="form_row">
+                        <div class="form_field">
+                            <input type="text" name="name" placeholder="Name" />
+                        </div>
+                        <div class="form_field">
+                            <input type="email" name="email" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="form_field">
+                            <input type="text" name="phone_number" placeholder="Phone Number" />
+                        </div>
+                        <div class="form_field">
+                            <input type="text" name="subject" placeholder="Subject" />
+                        </div>
+                    </div>
+                    <div class="form_row form_field">
+                        <textarea name="message" id="" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit Your Message" />
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
