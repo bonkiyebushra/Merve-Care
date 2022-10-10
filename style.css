@@ -205,10 +205,6 @@ footer {
   margin-right: 1rem;
 }
 
-/* input[type="radio"] {
-  display: inline;
-} */
-
 #services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 0.98fr));
