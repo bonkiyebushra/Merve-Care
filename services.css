@@ -4,6 +4,11 @@
   background-position-y: 0, -5rem;
 }
 
+main {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
 #services {
   gap: 4rem 4rem;
   justify-items: center;

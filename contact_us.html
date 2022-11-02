@@ -1,174 +1,220 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./contact_us.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./contact_us.css" />
     <title>Contact Us</title>
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-</head>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <a id="logo" href='./'><img src="./images/logo.png" alt="LOGO" /></a>
-        <img id="menu_bar" src="images/menu_bars.svg" alt="menu bars" onclick="handleMenuClick()">
-        <nav id="nav_area">
-            <img id="close_icon" src="./images/close_icon.svg" alt="" onclick="handleCloseButtonClick()">
+      <a id="logo" href="./"><img src="./images/logo.png" alt="LOGO" /></a>
+      <img
+        id="menu_bar"
+        src="images/menu_bars.svg"
+        alt="menu bars"
+        onclick="handleMenuClick()"
+      />
+      <nav id="nav_area">
+        <img
+          id="close_icon"
+          src="./images/close_icon.svg"
+          alt=""
+          onclick="handleCloseButtonClick()"
+        />
 
-            <h3>Merve Care</h3>
+        <h3>Merve Care</h3>
 
-            <a href="./">
-                <img src="./images/home_icon.svg" alt="home icon" class="">
-                Home
-            </a>
-            <hr>
-            <a href="./about_us.html">
-                <img src="./images/about_us_icon.svg" alt="about us icon" class="">
-                About Us
-            </a>
-            <hr>
-            <a href="./services.html">
-                <img src="./images/service_icon.svg" alt="service icon" class="">
-                Services
-            </a>
-            <hr>
-            <a href="./resources.html">
-                <img src="./images/resources_icon.svg" alt="resources icon" class="">
-                Resources
-            </a>
-            <hr>
-            <a class="selected_nav_item" href="./contact_us.html">
-                <img src="./images/contact_us_icon.svg" alt="contact us icon" class="">
-                Contact Us
-            </a>
-            <hr>
-        </nav>
+        <a href="./">
+          <img src="./images/home_icon.svg" alt="home icon" class="" />
+          Home
+        </a>
+        <hr />
+        <a href="./about_us.html">
+          <img src="./images/about_us_icon.svg" alt="about us icon" class="" />
+          About Us
+        </a>
+        <hr />
+        <a href="./services.html">
+          <img src="./images/service_icon.svg" alt="service icon" class="" />
+          Services
+        </a>
+        <hr />
+        <a href="./resources.html">
+          <img
+            src="./images/resources_icon.svg"
+            alt="resources icon"
+            class=""
+          />
+          Resources
+        </a>
+        <hr />
+        <a class="selected_nav_item" href="./contact_us.html">
+          <img
+            src="./images/contact_us_icon.svg"
+            alt="contact us icon"
+            class=""
+          />
+          Contact Us
+        </a>
+        <hr />
+      </nav>
     </header>
 
     <main id="contact_us">
-        <div id="top_section">
-            <h1>Contact Us</h1>
+      <div id="top_section">
+        <h1>Contact Us</h1>
+      </div>
+      <form id="contact_page_form" action="">
+        <div class="form_row">
+          <div class="form_field">
+            <label for="first_name">First Name *</label>
+            <input type="text" name="first_name" id="" required />
+          </div>
+          <div class="form_field">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="" />
+          </div>
         </div>
-        <form id="contact_page_form" action="">
-            <div class="form_row">
-                <div class="form_field">
-                    <label for="first_name">First Name *</label>
-                    <input type="text" name="first_name" id="" required>
-                </div>
-                <div class="form_field">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name" id="">
-                </div>
-            </div>
-            <div class="form_row">
-                <div class="form_field">
-                    <label for="email">Email Address *</label>
-                    <input type="email" name="email" id="" required>
-                </div>
-                <div class="form_field">
-                    <label for="phone_number">Phone Number</label>
-                    <input type="text" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" name="pbone_number"
-                        id="">
-                </div>
-            </div>
-            <div class="form_row form_field">
-                <label for="message">Message *</label>
-                <textarea name="message" id="" cols="30" rows="10" required></textarea>
-            </div>
-            <input type="submit" value="Submit Your Message">
-        </form>
+        <div class="form_row">
+          <div class="form_field">
+            <label for="email">Email Address *</label>
+            <input type="email" name="email" id="" required />
+          </div>
+          <div class="form_field">
+            <label for="phone_number">Phone Number</label>
+            <input
+              type="text"
+              pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$"
+              name="pbone_number"
+              id=""
+            />
+          </div>
+        </div>
+        <div class="form_row form_field">
+          <label for="message">Message *</label>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <input type="submit" value="Submit Your Message" />
+      </form>
     </main>
 
     <footer>
-        <div id="footer_top">
-            <div id="newsletter_subscribe_left">
-                <h2>Something Catchy</h2>
-                <h2>Something Else Catchy</h2>
-                <h3>Subscribe to our newsletter</h3>
-                <form class="newsletter_subscribe_form" action="">
-                    <input type="text" name="newsletter_email" id="" placeholder="Enter your email...">
-                    <input type="submit" value="">
-                </form>
-            </div>
-            <div id="newsletter_subscribe_right">
-                <img src="images/newsletter_handholding.png" alt="">
-            </div>
+      <div id="footer_top">
+        <div id="newsletter_subscribe_left">
+          <h2>Something Catchy</h2>
+          <h2>Something Else Catchy</h2>
+          <h3>Subscribe to our newsletter</h3>
+          <form class="newsletter_subscribe_form" action="">
+            <input
+              type="text"
+              name="newsletter_email"
+              id=""
+              placeholder="Enter your email..."
+            />
+            <input type="submit" value="" />
+          </form>
         </div>
-        <div id="footer_bottom">
-            <div class="logo_social">
-                <a class="footer_logo" href='./'><img src="./images/logo.png" alt="LOGO" /></a>
-                <div class="social_media">
-                    <p>Social Media</p>
-                    <div class="social_media_icons">
-                        <img src="images/facebook_icon.svg" alt="Facebook logo">
-                    </div>
-                </div>
-            </div>
-            <div class="footer_quick_links">
-                <h3>Links</h3>
-                <nav>
-                    <a href="./">Home</a>
-                    <a href="./contact_us.html">Contact Us</a>
-                    <a href="./services.html">Services</a>
-                    <a href="./about_us.html">About Us</a>
-                    <a href="./resources.html">Resources</a>
-                </nav>
-            </div>
-            <div class="footer_contact">
-                <h3>Contact</h3>
-                <a href="tel:614-555-5555">614-555-5555</a>
-                <a href="mailto:unknown@email.com">unknown@email.com</a>
-                <a href="mailto:unknownpersonal@email.com">unknownpersonal@email.com</a>
-            </div>
-            <div class="footer_newsletter">
-                <h3>Newsletter</h3>
-                <div class="footer_newsletter_box">
-                    <p>Subscribe to our newsletter</p>
-                    <form class="newsletter_subscribe_form" action="">
-                        <input type="text" name="newsletter_email" id="" placeholder="Enter your email...">
-                        <input type="submit" value="">
-                    </form>
-                </div>
-            </div>
+        <div id="newsletter_subscribe_right">
+          <img src="images/newsletter_handholding.png" alt="" />
         </div>
-        <div id="footer_bottom_mobile">
-            <a class="footer_logo" href='./'><img src="./images/logo.png" alt="LOGO" /></a>
-            <div class="footer_contact">
-                <h3>Contact</h3>
-                <a href="tel:614-555-5555">614-555-5555</a>
-                <a href="mailto:unknown@email.com">unknown@email.com</a>
-                <a href="mailto:unknownpersonal@email.com">unknownpersonal@email.com</a>
+      </div>
+      <div id="footer_bottom">
+        <div class="logo_social">
+          <a class="footer_logo" href="./"
+            ><img src="./images/logo.png" alt="LOGO"
+          /></a>
+          <div class="social_media">
+            <p>Social Media</p>
+            <div class="social_media_icons">
+              <img src="images/facebook_icon.svg" alt="Facebook logo" />
             </div>
-            <div class="footer_quick_links">
-                <h3>Links</h3>
-                <nav>
-                    <a href="./">Home</a>
-                    <a href="./contact_us.html">Contact Us</a>
-                    <a href="./services.html">Services</a>
-                    <a href="./about_us.html">About Us</a>
-                    <a href="./resources.html">Resources</a>
-                </nav>
-            </div>
-            <div class="social_media">
-                <h3>Social Media</h3>
-                <div class="social_media_icons">
-                    <a href=""><img src="images/facebook_icon.svg" alt="Facebook logo"></a>
-                </div>
-            </div>
-            <div class="footer_newsletter">
-                <h3>Newsletter</h3>
-                <div class="footer_newsletter_box">
-                    <p>Subscribe to our newsletter</p>
-                    <form class="newsletter_subscribe_form" action="">
-                        <input type="text" name="newsletter_email" id="" placeholder="Enter your email...">
-                        <input type="submit" value="">
-                    </form>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="footer_quick_links">
+          <h3>Links</h3>
+          <nav>
+            <a href="./">Home</a>
+            <a href="./contact_us.html">Contact Us</a>
+            <a href="./services.html">Services</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./resources.html">Resources</a>
+          </nav>
+        </div>
+        <div class="footer_contact">
+          <h3>Contact</h3>
+          <a href="tel:614-555-5555">614-555-5555</a>
+          <a href="mailto:mervecarellc@gmail.com">mervecarellc@gmail.com</a>
+        </div>
+        <div class="footer_newsletter">
+          <h3>Newsletter</h3>
+          <div class="footer_newsletter_box">
+            <p>Subscribe to our newsletter</p>
+            <form class="newsletter_subscribe_form" action="">
+              <input
+                type="text"
+                name="newsletter_email"
+                id=""
+                placeholder="Enter your email..."
+              />
+              <input type="submit" value="" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="footer_bottom_mobile">
+        <a class="footer_logo" href="./"
+          ><img src="./images/logo.png" alt="LOGO"
+        /></a>
+        <div class="footer_contact">
+          <h3>Contact</h3>
+          <a href="tel:614-555-5555">614-555-5555</a>
+          <a href="mailto:mervecarellc@gmail.com">mervecarellc@gmail.com</a>
+        </div>
+        <div class="footer_quick_links">
+          <h3>Links</h3>
+          <nav>
+            <a href="./">Home</a>
+            <a href="./contact_us.html">Contact Us</a>
+            <a href="./services.html">Services</a>
+            <a href="./about_us.html">About Us</a>
+            <a href="./resources.html">Resources</a>
+          </nav>
+        </div>
+        <div class="social_media">
+          <h3>Social Media</h3>
+          <div class="social_media_icons">
+            <a href=""
+              ><img src="images/facebook_icon.svg" alt="Facebook logo"
+            /></a>
+          </div>
+        </div>
+        <div class="footer_newsletter">
+          <h3>Newsletter</h3>
+          <div class="footer_newsletter_box">
+            <p>Subscribe to our newsletter</p>
+            <form class="newsletter_subscribe_form" action="">
+              <input
+                type="text"
+                name="newsletter_email"
+                id=""
+                placeholder="Enter your email..."
+              />
+              <input type="submit" value="" />
+            </form>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>

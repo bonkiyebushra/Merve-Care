@@ -62,7 +62,7 @@ body {
 
 main {
   /* padding: 0.5rem 0 0 0; */
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   /* min-width: 30rem; */
 }
 
@@ -170,6 +170,11 @@ footer {
   padding: 0 2rem 4rem 2rem;
 }
 
+#about_us_left {
+  display: flex;
+  align-items: center;
+}
+
 #about_us_right {
   display: flex;
   flex-direction: column;
@@ -259,6 +264,10 @@ footer {
   margin-bottom: 1rem;
 }
 
+.mission_visions ul li {
+  color: var(--tertiary-text-color)
+} 
+
 .mission_vision_font {
   padding: 0.5rem;
   border-radius: 0.33rem;
@@ -298,21 +307,25 @@ footer {
   margin-bottom: 2rem;
 }
 
-.footer_logo,.footer_contact, .footer_quick_links {
+.footer_logo,
+.footer_contact,
+.footer_quick_links {
   width: fit-content;
 }
 
-.footer_logo img{
+.footer_logo img {
   height: 5rem;
   width: 4rem;
 }
 
-#footer_bottom h3,#footer_bottom_mobile h3 {
+#footer_bottom h3,
+#footer_bottom_mobile h3 {
   color: var(--primary-text-color-red);
   margin-bottom: 3rem;
 }
 
-#footer_bottom nav,#footer_bottom_mobile nav {
+#footer_bottom nav,
+#footer_bottom_mobile nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -333,7 +346,7 @@ footer {
 }
 
 .social_media_icons img {
-  width:3rem;
+  width: 3rem;
 }
 
 .footer_quick_links {
@@ -365,12 +378,12 @@ footer {
 
 .top_section {
   background-size: cover;
-    background-repeat: no-repeat;
-    height: 30rem;
-    display: flex;
-    align-items: center;
-    background-position-x: 0, 30rem;
-    background-position-y: 0, -15rem;
+  background-repeat: no-repeat;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  background-position-x: 0, 30rem;
+  background-position-y: 0, -15rem;
 }
 
 .top_section h1 {
@@ -452,15 +465,16 @@ textarea {
   align-items: center;
   margin-top: 0.5rem;
   font-size: 1.15rem;
+  margin-left: 1rem;
 }
 
-#breadcrumb a,#breadcrumb img {
+#breadcrumb a,
+#breadcrumb img {
   color: red;
 }
 
 #breadcrumb a:hover {
   text-decoration: underline;
-  
 }
 
 .chevron_font {
@@ -469,12 +483,12 @@ textarea {
 }
 
 .page_form {
-  width: min(47rem,90%);
+  width: min(47rem, 90%);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3rem;
   border: 2px solid gray;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   text-align: left;
   padding: 2rem;
 }
@@ -492,20 +506,12 @@ textarea {
     padding: 0 0 2rem 0;
   }
 
-  
-  #about_us_left {
-    /* background-size: 100%; */
-    display: flex;
-    align-items: center;
-  }
-
   #about_us_left img {
     width: 100%;
   }
 }
 
 @media (max-width: 950px) {
-
   #about_us_section {
     display: flex;
     flex-direction: column;
@@ -520,7 +526,6 @@ textarea {
     flex-wrap: wrap;
     height: 30rem;
   }
-
 }
 
 @media (max-width: 750px) {
@@ -549,12 +554,13 @@ textarea {
     justify-content: start;
     height: 100vh;
     background-color: white;
-    box-shadow: -.25rem 0 1rem rgb(186, 185, 185);
+    box-shadow: -0.25rem 0 1rem rgb(186, 185, 185);
     /* padding: 0.25rem 2.5rem; */
-    padding-top: .75rem;
+    padding-top: 0.75rem;
   }
 
-  #nav_area a,#nav_area h3 {
+  #nav_area a,
+  #nav_area h3 {
     margin-left: 2.5rem;
   }
 
@@ -568,7 +574,7 @@ textarea {
   }
 
   #nav_area img {
-    display:initial;
+    display: initial;
     margin-right: 1rem;
   }
 
@@ -587,7 +593,7 @@ textarea {
   #newsletter_subscribe_left {
     width: 100%;
     height: 50%;
-    padding:3rem 2rem;
+    padding: 3rem 2rem;
   }
 
   #footer_bottom {
@@ -596,18 +602,17 @@ textarea {
 
   #footer_bottom_mobile {
     display: grid;
-    grid-template-areas: 
-    "logo contact"
-    "links social"
-    "newsletter newsletter"
-    ;
+    grid-template-areas:
+      "logo contact"
+      "links social"
+      "newsletter newsletter";
     padding: 1rem 1rem 3.5rem 1rem;
   }
-  
+
   #footer_bottom_mobile h3 {
     margin-bottom: 1.5rem;
   }
-  
+
   #footer_bottom_mobile .footer_newsletter {
     grid-area: newsletter;
   }
@@ -620,7 +625,7 @@ textarea {
     background-position: center !important;
   }
 
-  .top_section>h1 {
+  .top_section > h1 {
     margin: auto auto 1rem auto;
     color: white;
   }
@@ -637,7 +642,6 @@ textarea {
   .mission_vision_texts {
     margin-left: 0;
   }
-  
 }
 
 @media (max-width: 550px) {
@@ -647,7 +651,7 @@ textarea {
 
   #newsletter_subscribe_right {
     height: 20rem;
-    width:100%
+    width: 100%;
   }
 
   .form_row {

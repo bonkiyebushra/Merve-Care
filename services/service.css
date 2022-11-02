@@ -39,7 +39,6 @@ li img {
   padding-left: 2rem;
 }
 
-
 #service_sublist {
   columns: 2;
   -webkit-columns: 2;
@@ -69,13 +68,11 @@ textarea {
   min-height: 10rem;
 }
 
-@media (max-width:1300px) {
-
+@media (max-width: 1300px) {
   #service_description {
     padding: 2rem 1rem;
     align-items: center;
   }
-
 }
 
 @media (max-width: 950px) {
@@ -83,7 +80,7 @@ textarea {
     flex-direction: column;
   }
 
-  #service_left  {
+  #service_left {
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -100,7 +97,6 @@ textarea {
   #service_contact_left {
     width: 40%;
   }
-
 }
 
 @media (max-width: 750px) {
